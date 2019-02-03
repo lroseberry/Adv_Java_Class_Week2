@@ -27,8 +27,7 @@ public class BasicStockServiceTest {
      */
     @Test
     public final void testGetQuotePositive() {
-		String expected = "APPL";
-        assertTrue("The returned string is correct",basicStockService.getQuote(symbol).getSymbol().equals(symbol));
+		assertTrue("The returned string is correct",basicStockService.getQuote(symbol).getSymbol().equals(symbol));
     }
 
     /**
@@ -37,7 +36,7 @@ public class BasicStockServiceTest {
     @Test
     public final void testGetQuoteNegative() {
 		String expected = "IBM";
-        assertFalse("The returned string is correct", basicStockService.getQuote(symbol).getSymbol().equals(expected));
+        assertFalse("The returned string does not match the expected result", basicStockService.getQuote(symbol).getSymbol().equals(expected));
     }
 	
 }

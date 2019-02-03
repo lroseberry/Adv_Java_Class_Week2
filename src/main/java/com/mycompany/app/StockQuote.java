@@ -13,6 +13,7 @@ public class StockQuote {
 
 	/**
      * Constructs a new StockQuote instance
+	 * @param currDate date this price is being retrieved
      * @param price price of the stock 
      * @param symbol symbol for the company issuing the stock
      */
